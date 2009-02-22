@@ -43,7 +43,8 @@ class TwitterClient
       puts "too long message, #{s.length} chars"
     else
       puts "\"#{s}\" (#{s.length})"
-      res = Net::HTTP.post_form(URI.parse("http://#{@username}:#{@password}@twitter.com/statuses/update.json"), { 'status' => s })
+      res = Net::HTTP.post_form(URI.parse("http://#{@username}:#{@password}@"+
+        "twitter.com/statuses/update.json"), { 'status' => s })
       case res
       when Net::HTTPSuccess, Net::HTTPRedirection
         # puts res.body
