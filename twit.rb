@@ -31,7 +31,7 @@ require 'htmlentities'
 
 class TwitterClient
   def initialize
-    config = YAML.load_file("#{ENV['HOME']}/.twitter")
+    config = YAML.load_file("#{ENV['HOME']}/.twitter-client")
     @username = config["username"]
     @password = config["password"]
   end
