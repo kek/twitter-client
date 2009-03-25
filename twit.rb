@@ -15,7 +15,7 @@
 #
 # You must do "gem install htmlentities" or "sudo gem install htmlentities"
 #
-# Your username and password are stored in ~/.twitter as a YAML file
+# Your username and password are stored in ~/.twitter-client as a YAML file
 #     ---
 #     username: me
 #     password: secret
